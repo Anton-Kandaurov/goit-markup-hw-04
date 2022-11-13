@@ -152,9 +152,29 @@ img{
     color: var(--accent-color);
 }
 
-.gmail{
-    display: flex;
+
+.header-nav-contact:focus,
+.header-nav-contact:hover .head-cvg{
+    fill: var(--accent-color);
 }
+
+.contact-head{
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    color: var(--title-N2-text-color);
+    fill: var(--title-N2-text-color);
+}
+
+
+
+.head-cvg{
+   display: flex;
+   align-items: baseline;
+   fill: var(--title-N2-text-color);
+}
+
+
 
 /*-----------Main---------*/
 
@@ -299,6 +319,7 @@ img{
     background-color: var(--basic-title-color);
     border-radius: 5px;
     border: 1px solid #ECECEC;
+    box-shadow: 200 200 10 10 var(--title-text-color);
 }
 
 .team-con-text{
