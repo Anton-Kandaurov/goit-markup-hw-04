@@ -111,6 +111,8 @@ img{
     list-style-type: none;
     display: flex;
     gap: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .header-nav-li{
@@ -122,8 +124,7 @@ img{
     list-style-type:none;
     color: var(--title-N3-text-color);
     display: block;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    gap: 10px;
 }
 
 .header-nav-li:hover,
@@ -145,42 +146,39 @@ img{
   letter-spacing: 0.02em; 
   gap: 50px;
   margin-left: auto; 
+  align-items: baseline;
 }
 
 .header-nav-contact:focus,
 .header-nav-contact:hover{
     color: var(--accent-color);
-}
-
-
-.header-nav-contact:focus,
-.header-nav-contact:hover .head-cvg{
     fill: var(--accent-color);
 }
 
 .contact-head{
-    display: flex;
     align-items: baseline;
     gap: 10px;
     color: var(--title-N2-text-color);
     fill: var(--title-N2-text-color);
 }
 
-
-
+ 
 .head-cvg{
    display: flex;
    align-items: baseline;
    fill: var(--title-N2-text-color);
 }
 
-
+.svg-header{
+   margin-right: 10px;
+}
 
 /*-----------Main---------*/
 
 /*------------hero--------*/
 
 .hero{
+    max-width: 1600px;
     color: var(--basic-title-color);
     background-color: var(--hero-footer-color);
     padding: 200px 0px;
@@ -271,6 +269,9 @@ img{
     height: 120px;
     background-color: var(--backroun-color);
     margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 /*----------Work--------*/
@@ -319,13 +320,14 @@ img{
     background-color: var(--basic-title-color);
     border-radius: 5px;
     border: 1px solid #ECECEC;
-    box-shadow: 200 200 10 10 var(--title-text-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
 }
 
 .team-con-text{
     gap: 10px;
     padding-top: 30px;
-    margin-bottom: 16px;
+    padding-bottom: 30px;
 }
 
 
@@ -371,6 +373,7 @@ img{
 .work-text{
     text-align: center;
     color: var(--title-N2-text-color);
+    margin-bottom: 16px;
 }
 
 
@@ -382,7 +385,6 @@ img{
    display: flex;
    width: 260px;
    height: 44px;
-   margin-bottom: 30px;
    justify-content: center;
    gap: 10px;
 }
@@ -417,6 +419,10 @@ img{
     fill: var(--basic-title-color);
 }
 
+.svg-li:focus .svg-icon {
+    fill: var(--basic-title-color);
+}
+
 /*-----------------client------------*/
 
 
@@ -436,6 +442,8 @@ img{
     height: 92px;
 }
 
+
+.client-li:focus,
 .client-li:hover{
     border:1px solid var(--accent-color) ;
 }
@@ -455,6 +463,10 @@ img{
 }
 
 .client-li:hover .svg-client{
+    fill: var(--accent-color);
+}
+
+.client-li:focus .svg-client {
     fill: var(--accent-color);
 }
 
@@ -543,8 +555,6 @@ img{
 
 .svg-list-foot{
     display: flex;
-    width: 260px;
-    height: 44px;
     gap: 10px;
 }
 
@@ -559,6 +569,10 @@ img{
 .svg-li-foot:focus,
 .svg-li-foot:hover {
     background-color: var(--accent-color);
+}
+
+.svg:focus{
+    border-color: var(--accent-color);
 }
 
 .svg-icon-foot {
@@ -677,3 +691,7 @@ img{
     border-bottom: 1px solid #ECECEC;
 }
    
+.portfolio-list-li:hover,
+.portfolio-list-li:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
