@@ -111,8 +111,7 @@ img{
     list-style-type: none;
     display: flex;
     gap: 50px;
-    padding-top: 32px;
-    padding-bottom: 32px;
+
 }
 
 .header-nav-li{
@@ -125,6 +124,8 @@ img{
     color: var(--title-N3-text-color);
     display: block;
     gap: 10px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .header-nav-li:hover,
@@ -143,10 +144,10 @@ img{
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1428;
-  letter-spacing: 0.02em; 
-  gap: 50px;
+  letter-spacing: 0.02em;
   margin-left: auto; 
-  align-items: baseline;
+  align-items: center;
+  display: flex;
 }
 
 .header-nav-contact:focus,
@@ -160,6 +161,10 @@ img{
     gap: 10px;
     color: var(--title-N2-text-color);
     fill: var(--title-N2-text-color);
+}
+
+.header-nav-a{
+    margin-left: auto;
 }
 
  
@@ -182,7 +187,9 @@ img{
     color: var(--basic-title-color);
     background-color: var(--hero-footer-color);
     padding: 200px 0px;
-    background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../img/hero-backround.jpg);
+    margin: 0 auto;
+    background-image:
+    linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../img/hero-backround.jpg);
 }
 
 .hero-h1{
@@ -265,13 +272,13 @@ img{
 
 
 .list-con-svg{
-    width: 270px;
-    height: 120px;
     background-color: var(--backroun-color);
     margin-bottom: 30px;
     justify-content: center;
     align-items: center;
     display: flex;
+    padding: 25px 100px;
+    border-radius: 5px;
 }
 
 /*----------Work--------*/
@@ -357,7 +364,7 @@ img{
     line-height: 19px;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 
@@ -383,8 +390,6 @@ img{
 
 .svg-list{
    display: flex;
-   width: 260px;
-   height: 44px;
    justify-content: center;
    gap: 10px;
 }
@@ -446,6 +451,7 @@ img{
 .client-li:focus,
 .client-li:hover{
     border:1px solid var(--accent-color) ;
+    fill: var(--accent-color);
 }
 
 .client-ul{
@@ -460,14 +466,21 @@ img{
     align-items: center;
     justify-content: center;
     fill: var(--icon-basic-color);
+    padding: 16px 32px;
+}
+
+.client-li-svg:focus,
+.client-li-svg:hover{
+    fill: var(--accent-color);
 }
 
 .client-li:hover .svg-client{
     fill: var(--accent-color);
 }
 
-.client-li:focus .svg-client {
+.client-li:focus .client-li {
     fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
 }
 
 /*-----------------footer-------------*/
@@ -481,6 +494,7 @@ img{
 .foot-con{
   display: flex;
   gap: 70px;
+  align-items: baseline;
 }
 
 .footer-addres{
@@ -566,8 +580,13 @@ img{
     display: flex;
 }
 
-.svg-li-foot:focus,
-.svg-li-foot:hover {
+.svg-li-foot:hover,
+.svg-li-foot:focus
+ {
+    background-color: var(--accent-color);
+}
+
+.svg-li-foot:focus {
     background-color: var(--accent-color);
 }
 
