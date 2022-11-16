@@ -63,6 +63,9 @@ img{
   color: var(--title-N3-text-color);
 }
 
+a{
+    text-decoration: none;
+}
 
 /*--------------header-----------*/
 
@@ -148,6 +151,8 @@ img{
   margin-left: auto; 
   align-items: center;
   display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-nav-contact:focus,
@@ -519,7 +524,7 @@ img{
 }
 
 .footer-nav-contact {
-    color: #ACACB0;
+    color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     list-style-type: none;
     font-weight: 500;
@@ -602,6 +607,10 @@ img{
 /*----------partfolio.html-----------*/
 /*-----------------------------------*/
 
+.portfolio-list{
+    text-decoration: none;
+    color: var(--title-N3-text-color);
+}
 
 .header-container-port{
     border-bottom: 1px solid #ECECEC;
@@ -669,6 +678,7 @@ img{
     line-height: 2;
     letter-spacing: 0.06em;
     margin-bottom: 4px;
+    color: var(--title-N3-text-color);
 }
 
 .portfolio-list-p{
@@ -695,6 +705,7 @@ img{
     border-bottom:1px solid #ECECEC;
     border-left: 1px solid #ECECEC;
     border-right: 1px solid #ECECEC;
+    text-decoration: none;
 }
 
 
